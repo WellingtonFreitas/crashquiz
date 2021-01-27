@@ -9,25 +9,11 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizLogo from '../src/components/QuizLogo';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
+import QuizContainer from '../src/components/QuizContainer'; 
 
 
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 320px;
-  padding-top: 45px;
-  margin: auto 10%;
-  margin-left:60%;
-  margin-top: 11%;
-  @media screen and (max-width: 780px){
-    margin: auto;
-    padding: 5%;
-  }
-  @media screen and (max-width: 500px){
-    margin: auto;
-    padding: 15%;
-  }
-`;
 
 export default function Home() {
 
@@ -53,16 +39,15 @@ export default function Home() {
               infosDoevento.preventDefault();
               router.push(`/quiz?name=${name}`)
             }}>
-              <input
-                onChange={infosDoevento => {
-                  setName(infosDoevento.target.value);
-                }}
+              <Input
+                name="userName"
+                onChange={infosDoevento => { setName(infosDoevento.target.value); }}
                 placeholder="Digite seu nome">
 
-              </input>
-              <button type="submit" disabled={name.length === 0}>
-                Iniciar como {name}
-              </button>
+              </Input>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Iniciar como ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>

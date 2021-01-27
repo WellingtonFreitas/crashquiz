@@ -4,27 +4,126 @@
   "description": "Teste os seus conhecimentos sobre o nosso querido Crash Bandcoot e vamos ver quantos diamantes você vai conseguir pegar",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://steamuserimages-a.akamaihd.net/ugc/785232140934287854/BC02F3DDDA6D33B533B2570609936CF56F3A5957/",
+      "title": "Qual o nome da mascara que acompanha o crash durante as fases?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Aku-Aku",
+        "Buru-Baga",
+        "buga-buga",
+        "uga-uga"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
+      "image": "https://media.giphy.com/media/y87Benw8AteF2/giphy.gif",
+      "title": "Para qual console foi lançado o primeiro game do Crash?",
       "description": "Faz tempo em haha",
+      "answer": 2,
+      "alternatives": [
+        "Nintendo",
+        "Atari",
+        "PlaystationOne",
+        "Mega Drive"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/KZHWmgQQhoRt9Djjnz/giphy.gif",
+      "title": "Qual o total de ilhas apresentadas no primeiro game?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        " Uma ilha ",
+        " Duas ilhas ",
+        " Três ilhas ",
+        " Quatro ilhas "
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/Q8V5Ba1jFuWlA9Ot1V/giphy.gif",
+      "title": "Qual nome do maior arqui-inimigo de Crash? ",
+      "description": "",
       "answer": 0,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "Dr. Neo Cortex ",
+        "Sonic",
+        "Donkey Kong",
+        "Mario"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/VG1uumbyC80js8zRHS/giphy.gif",
+      "title": "Em Crash of the Titans o nosso marsupial ganha uma nova habilidade que é? ",
+      "description": "Essa ta facil.",
+      "answer": 0,
+      "alternatives": [
+        "controlar monstros maiores que ele ",
+        "Voar",
+        "Uma transformção",
+        "Se teletransportar "
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/fVyDqA994W1F9GDLoj/giphy.gif",
+      "title": "Em Crash Bandicoot 4: It’s About Time quem cria um rasgo na estrutura do tempo, o que acaba por expor o multiverso?",
+      "description": "Essa ta fresquinha na mente.",
+      "answer": 2,
+      "alternatives": [
+        "Coco, Crash e Tawna ",
+        "Steve, Jhonny  e Tommy",
+        "Dr. Cortex, N. Tropy e Uka Uka",
+        "Dr. Nitrus Brio, Dr. Cortex e Aku Aku"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/lRvpBMwMaCPvgnQZL9/giphy.gif",
+      "title": "No primeiro de Crash Bandicoot a fase Stormy Ascent foi deletada da versão final do game por qual motivo?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Por ter muitas fases",
+        "Por ser extremamente difícil",
+        "Por ter conteudo ofensivo",
+        "Foi considerada hiperssexualizada pela mídia"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/ZaoZTAx0NNiZpXSnrj/giphy.gif",
+      "title": "E em qual game a fase Stormy Ascent foi inserida novamente?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Crash of the Titans como fase padrão",
+        "Crash Twinsanity",
+        "Crash Bandicoot N. Sane Trilogy como DLC",
+        "Crash Bandicoot 4: It’s About Time como DLC"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/TGpQsmch6GMTohqYpu/giphy.gif",
+      "title": "Qual o nome da irmã de Crash?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Crasha Bandicoot",
+        "Tawna Twinsanity",
+        "Tata Bandicoot",
+        "Coco Bandcoot"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/SxFixJzihWu2WKzYkt/giphy.gif",
+      "title": "Para pegar uma gema colorida em Crash Bandcoot 1 voçê precisa... ",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Passar uma fase de gema pegando todas as caixas e sem perder vida.",
+        "Coletar 100 Wumpa fruits",
+        "Passar uma fase com o menor tempo possivel",
+        "Não existe gemas coloridas"
       ]
     }
+    
   ],
   "external": [
     ""
@@ -32,7 +131,7 @@
   "theme": {
     "colors": {
       "primary": "#FF7F24",
-      "secondary": "#29b6f6",
+      "secondary": "#45803e",
       "mainBg": "#EEB422",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
