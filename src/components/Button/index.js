@@ -6,7 +6,7 @@ const Button = styled.button`
   color: ${({ theme }) => theme.colors.contrastText};
   border-radius: ${({ theme }) => theme.borderRadius};
   border: 0;
-  margin-top: 10px;
+  margin-bottom: 1.5px;
   width: 100%;
   padding: 10px 16px;
   font-weight: bold;
@@ -21,6 +21,7 @@ const Button = styled.button`
     opacity: .5;
   }
   &:disabled {
+    opacity:0;
     background-color: #979797;
     cursor: not-allowed;
   }

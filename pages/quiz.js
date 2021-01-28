@@ -14,7 +14,51 @@ import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
 
 
+function ResultWidget({ results }) {
+    const router = useRouter();
+    const {
+        query: { name },
+    } = router
+    var score = `${results.filter((x) => x).length}`;
+    return (
+        <Widget>
+            <Widget.Header>
+                {score < 5 ?
+                    <p> {name} você ganhou {score} cristais, não desista, tente novamente.</p>
+                    : <p> {name} você ganhou {score} cristais, parabéns</p>
+                    
+                }
+            </Widget.Header>
 
+            <Widget.Content>
+                <form onSubmit={function (event) {
+                    event.preventDefault();
+                    router.push('/');
+                }} >
+                    {score < 5 ?
+                        <img alt="Descricao"
+                            style={{
+                                width: '100%',
+                                height: '250px',
+                                objectFit: 'cover'
+                            }}
+                            src={db.resultsImage.low}
+                        />
+                        : <img alt="Descricao"
+                            style={{
+                                width: '100%',
+                                height: '250px',
+                                objectFit: 'cover'
+                            }}
+                            src={db.resultsImage.max}
+                        />
+                    }
+                    <Button type="submit">Voltar</Button>
+                </form>
+            </Widget.Content>
+        </Widget>
+    );
+}
 
 function LoadingWidget() {
     return (
@@ -30,9 +74,14 @@ function LoadingWidget() {
     );
 }
 
-function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit }) {
-    const questionId = `question__${questionIndex}`;
+function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit, addResult }) {
     const router = useRouter();
+    const [selectedAlternative, setSelectedAlternative] = React.useState(undefined);
+    const [isQuestionSubmited, setIsQuestionSubmited] = React.useState(false);
+    const questionId = `question__${questionIndex}`;
+    const isCorect = selectedAlternative === question.answer;
+    const hasAlternativeSelected = selectedAlternative !== undefined;
+
     return (
         <Widget>
             <Widget.Header>
@@ -57,32 +106,43 @@ function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit }) {
 
                 <form onSubmit={(infosDoEvento) => {
                     infosDoEvento.preventDefault();
+                    setIsQuestionSubmited(true);
+
+                    addResult(isCorect);
                     onSubmit();
+                    setIsQuestionSubmited(false);
+                    setSelectedAlternative(undefined);  
+
                 }} >
                     {question.alternatives.map((alternative, alternativeIndex) => {
                         const alternativeId = `alternative__${alternativeIndex}`;
                         return (
                             // eslint-disable-next-line react/jsx-key
-                            <Widget.Topic as="label" htmlFor={alternativeId}>
+                            <Widget.Topic as="label" key={alternative} htmlFor={alternativeId}>
 
-                                <input id={questionId}
-                                    style={{ display: 'none' }}
+                                <input
+                                    id={alternativeId}
+                                    name={questionId}
+                                    //style={{ display: 'none' }}
+                                    onChange={() => setSelectedAlternative(alternativeIndex)}
                                     type="radio"
+
                                 />
                                 {alternative}
                             </Widget.Topic>
                         );
                     })}
-                    <Button type="submit">
+                    <Button type="submit" disabled={!hasAlternativeSelected}>
                         Confirmar
                     </Button>
 
-                    <Button onClick={function (event) {
+                    <Button type="button" onClick={function (event) {
                         event.preventDefault();
                         router.push('/');
                     }} style={{ backgroundColor: '#dd2c00' }}>
                         Desistir
                     </Button>
+
 
                 </form>
 
@@ -101,11 +161,19 @@ const screenStates = {
 
 export default function QuizPage() {
     const [screenState, setScreenState] = React.useState(screenStates.LOADING);
+    const [results, setResults] = React.useState([]);
     const totalQuestions = db.questions.length;
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
     const questionIndex = currentQuestion;
     const question = db.questions[questionIndex];
     const router = useRouter();
+
+    function addResult(result) {
+        setResults([
+            ...results,
+            result
+        ]);
+    };
 
     React.useEffect(() => {
         setTimeout(() => {
@@ -136,21 +204,12 @@ export default function QuizPage() {
                         questionIndex={questionIndex}
                         totalQuestions={totalQuestions}
                         onSubmit={handleSubmitQuiz}
+                        addResult={addResult}
                     />
                 )}
                 {screenState === screenStates.LOADING && <LoadingWidget />}
 
-                {screenState === screenStates.RESULT && <Widget>
-                    <Widget.Header> voçê ganhou x cristais, parabéns!</Widget.Header>
-            <Widget.Content>
-                        <form onSubmit={function (event) {
-                            event.preventDefault();
-                            router.push('/');
-                        }} >
-                            <Button type="submit">Voltar</Button>
-                        </form>
-            </Widget.Content>
-                </Widget>}
+                {screenState === screenStates.RESULT && <ResultWidget results={results} />}
 
             </QuizContainer>
             <GitHubCorner projectUrl="https://github.com/WellingtonFreitas" />

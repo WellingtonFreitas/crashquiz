@@ -21,12 +21,12 @@ export default function Home() {
   const [name, setName] = React.useState('');
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={db.bg}> 
       <Head>
         <title> Crash Quiz</title>
       </Head>
       <QuizContainer>
-        <QuizLogo />
+        {/* <QuizLogo /> */}
         <Widget>
           <Widget.Header>
             <h1>{db.title}</h1>
@@ -42,7 +42,7 @@ export default function Home() {
               <Input
                 name="userName"
                 onChange={infosDoevento => { setName(infosDoevento.target.value); }}
-                placeholder="Digite seu nome">
+                placeholder="Digite seu nome para iniciar">
 
               </Input>
               <Button type="submit" disabled={name.length === 0}>

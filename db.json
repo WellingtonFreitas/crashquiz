@@ -1,10 +1,10 @@
 {
   "bg": "https://poltronanerd.com.br/wp-content/uploads/2017/08/crash-bandicoot-n-sane-trilogy-listing-thumb-us-03dec16.png",
-  "title": "Quiz Crash bandicoot",
+  "title": "Quiz Crash Bandicoot",
   "description": "Teste os seus conhecimentos sobre o nosso querido Crash Bandcoot e vamos ver quantos diamantes você vai conseguir pegar",
   "questions": [
     {
-      "image": "https://steamuserimages-a.akamaihd.net/ugc/785232140934287854/BC02F3DDDA6D33B533B2570609936CF56F3A5957/",
+      "image": "https://i2.wp.com/apertaox.com/wp-content/uploads/2018/08/crash_10.jpg?resize=1024%2C576&ssl=1",
       "title": "Qual o nome da mascara que acompanha o crash durante as fases?",
       "description": "Essa é pra aquecer",
       "answer": 0,
@@ -16,9 +16,9 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/y87Benw8AteF2/giphy.gif",
+      "image": "https://media.giphy.com/media/JlpFfbMVtqmsqS0kCA/giphy.gif",
       "title": "Para qual console foi lançado o primeiro game do Crash?",
-      "description": "Faz tempo em haha",
+      "description": "Estamos aquecendo",
       "answer": 2,
       "alternatives": [
         "Nintendo",
@@ -46,13 +46,13 @@
       "answer": 0,
       "alternatives": [
         "Dr. Neo Cortex ",
-        "Sonic",
-        "Donkey Kong",
-        "Mario"
+        "Koala Kong",
+        "Dingodile",
+        "Doutor Nitrus Brio"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/VG1uumbyC80js8zRHS/giphy.gif",
+      "image": "https://media.giphy.com/media/KZ4hQeWF68couaBELC/giphy.gif",
       "title": "Em Crash of the Titans o nosso marsupial ganha uma nova habilidade que é? ",
       "description": "Essa ta facil.",
       "answer": 0,
@@ -94,7 +94,7 @@
       "answer": 2,
       "alternatives": [
         "Crash of the Titans como fase padrão",
-        "Crash Twinsanity",
+        "Crash Twinsanity como fase padrão",
         "Crash Bandicoot N. Sane Trilogy como DLC",
         "Crash Bandicoot 4: It’s About Time como DLC"
       ]
@@ -138,5 +138,9 @@
       "success": "#4CAF50"
     },
     "borderRadius": "4px"
+  },
+  "resultsImage": {
+    "max": "https://media.giphy.com/media/VG1uumbyC80js8zRHS/giphy.gif",
+    "low": "https://media.giphy.com/media/WT46Pa3d1shTnTBUX3/giphy.gif"
   }
 }

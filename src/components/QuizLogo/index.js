@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 
 function Logo({ className }) {
     return (
-        //        <img width="350" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/557703a2-f0df-4e9e-8006-f1a8a0666122/dce36as-d4f9c2b7-3eff-4b88-9010-01032e2db0dc.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTU3NzAzYTItZjBkZi00ZTllLTgwMDYtZjFhOGEwNjY2MTIyXC9kY2UzNmFzLWQ0ZjljMmI3LTNlZmYtNGI4OC05MDEwLTAxMDMyZTJkYjBkYy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.UWMNta-rTZvBoJoYpqqJWKo51ERe3Oqs30JOSNDn-Ro"></img>
-
         <svg className={className} width="135" height="67" viewBox="0 0 135 67" fill="none" xmlns="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/557703a2-f0df-4e9e-8006-f1a8a0666122/dce36as-d4f9c2b7-3eff-4b88-9010-01032e2db0dc.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTU3NzAzYTItZjBkZi00ZTllLTgwMDYtZjFhOGEwNjY2MTIyXC9kY2UzNmFzLWQ0ZjljMmI3LTNlZmYtNGI4OC05MDEwLTAxMDMyZTJkYjBkYy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.UWMNta-rTZvBoJoYpqqJWKo51ERe3Oqs30JOSNDn-Ro">
             <g clipPath="url(#clip0)">
                 <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="2" y="2" width="110" height="50" fill="black">
