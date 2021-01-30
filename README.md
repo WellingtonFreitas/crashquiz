@@ -27,7 +27,7 @@ Esse projeto foi criado durante o curso  IMERSÃO REACT NEXT.JS da Alura Cursos 
   
 Essas instruções fornecerão uma cópia do projeto completo instalado e funcionando em sua máquina local para fins de desenvolvimento e teste.
 
-The project can be built with npm or yarn, so choose one of the approach bellow in case you don't have any installed on your system.
+Oprojeto pode ser executado com npm ou yarn, então escolha uma das abordagens abaixo caso você não tenha nenhum instalado em seu sistema.
 
 * **Npm** é distribuído com Node.js, o que significa que quando você baixa o Node.js, o npm é instalado automaticamente em seu computador.. [Download Node.js](https://nodejs.org/en/download/)
 
