@@ -1,78 +1,92 @@
-# Example app with styled-components
+# Crash Bandcoot Quiz
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+![Cover Crash Bandcoot cover](https://github.com/WellingtonFreitas/crashquiz/blob/main/src/images/cover.PNG?raw=true)
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+## Descrição do Projeto
+<p>
+Crash Bandcoot Quiz é um jogo de perguntas e você pode ver o resultado final clicando <a href="https://crashquiz.wellingtonfreitas.vercel.app/">aqui.<a/>
+ </p>
+## Tecnologias
 
-## Deploy your own
+Esse projeto foi criado durante o curso  IMERSÃO REACT NEXT.JS da Alura Cursos com as seguintes tecnologias:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+-  [ReactJS](https://reactjs.org/)
+-  [Styled-components](https://www.styled-components.com/)
+-  [NextJS](https://nextjs.org/)
+- [Vercel](https://vercel.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [ESLint](https://eslint.org/)
+- [Lottie Files](https://lottiefiles.com/)
+- [Crello](https://crello.github.io/react-lottie/)
+- [NPM](https://www.npmjs.com/)
+- [VS Code](https://code.visualstudio.com/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
+  
+## Executando o projeto em sua maquina local
 
-## How to use
+  
+Essas instruções fornecerão uma cópia do projeto completo instalado e funcionando em sua máquina local para fins de desenvolvimento e teste.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+The project can be built with npm or yarn, so choose one of the approach bellow in case you don't have any installed on your system.
 
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
+* **Npm** é distribuído com Node.js, o que significa que quando você baixa o Node.js, o npm é instalado automaticamente em seu computador.. [Download Node.js](https://nodejs.org/en/download/)
+
+* **Yarn** é um gerenciador de pacotes criado pela equipe do Facebook e parece ser mais rápido que o npm em geral.  [Download Yarn](https://yarnpkg.com/en/docs/install)
+
+
+* Para fazer o download do projeto siga as seguintes instruções:
+
+```
+1. git clone https://github.com/WellingtonFreitas/crashquiz.git
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+* Instalando as dependências e iniciando o projeto :
 
-### Try it on CodeSandbox
+```
+2. yarn install
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
+ou
 
-### Notes
+3. npm install
+```
+```
+4. npm install --save styled-components
 
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
+ou 
 
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
+5. yarn add styled-components --dev
+```
+```
+6. npm install eslint --save-dev
 
-**components/StyledLink.js**
+ou
 
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
+7. yarn add eslint --dev
 ```
 
-**pages/index.js**
+```
+8. npm install --save @crello/react-lottie
 
-```javascript
-import StyledLink from '../components/StyledLink'
+ou
 
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
+9. yarn add @crello/react-lottie
 ```
 
-</details>
+* Executando o Projeto
+```
+npm run dev
+ou
+yarn run dev.
+```
+### Autor
+---
+
+<a href="https://blog.rocketseat.com.br/author/thiago/">
+ <img style="border-radius: 100%;" src=https://avatars.githubusercontent.com/u/72938207?s=400&u=9c4637de193798aec28c20978e83b0ff7f8b4f28&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Wellington Freitas</b></sub></a> <a 
+
+
+Entre em contato!
+[![Linkedin Badge](https://img.shields.io/badge/-WellingtonFreitas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/isadora-rodrigues-stangarlin-48402b141/)](https://www.linkedin.com/in/wellington-freitas-43624283/) [![Gmail badge](https://img.shields.io/badge/-wellington.m.de.freitas-red?style=flat-square&logo=Gmail&logoColor=white&link=mailto:wellington.m.de.freitas@gmail.com)](mailto:wellington.m.de.freitas@gmail.com)
+
