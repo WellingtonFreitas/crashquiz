@@ -1,7 +1,7 @@
 {
   "bg": "https://poltronanerd.com.br/wp-content/uploads/2017/08/crash-bandicoot-n-sane-trilogy-listing-thumb-us-03dec16.png",
   "title": "Quiz Crash Bandicoot",
-  "description": "Teste os seus conhecimentos sobre o nosso querido Crash Bandcoot e vamos ver quantos diamantes você vai conseguir pegar",
+  "description": "Teste os seus conhecimentos sobre o nosso querido Crash Bandcoot e vamos ver quantos pontos você vai conseguir no final",
   "questions": [
     {
       "image": "https://i2.wp.com/apertaox.com/wp-content/uploads/2018/08/crash_10.jpg?resize=1024%2C576&ssl=1",
@@ -126,7 +126,9 @@
     
   ],
   "external": [
-    ""
+    "https://quiz-justiceleague.levi-magny.vercel.app/",
+    "https://quiz-one-piece.henpassquesori.vercel.app/",
+    "https://aluraquiz.felipebeskow.vercel.app/"
   ],
   "theme": {
     "colors": {
