@@ -81,7 +81,7 @@ yarn run dev.
 ### Autor
 ---
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href=https://github.com/WellingtonFreitas">
  <img style="border-radius: 100%;" src=https://avatars.githubusercontent.com/u/72938207?s=400&u=9c4637de193798aec28c20978e83b0ff7f8b4f28&v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Wellington Freitas</b></sub></a> <a> 
